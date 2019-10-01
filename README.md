@@ -1,14 +1,14 @@
-#MoiCart
+# MoiCart
 
-##Aiding the proactive and conscientious shopper one item at a time..
+## Aiding the proactive and conscientious shopper one item at a time..
 
-######Why give us a try?
+###### Why give us a try?
 
 *Offering you the ability to price-check any grocery store around you,*
 *without any cost and in a matter of seconds. Giving you more time to*
 *to focus on more important things in your busy life ..*
 
-######Our Team
+###### Our Team
 
 **Benhallam, Karim**
 _300100867_
