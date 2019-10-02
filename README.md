@@ -1,4 +1,4 @@
-![Logo](https://www.https://github.com/MoiCart/MoiCart.github.io/rec/repo-template.png)
+![Logo](https://www.github.com/MoiCart/MoiCart.github.io/rec/repo-template.png)
 
 # MoiCart
 
