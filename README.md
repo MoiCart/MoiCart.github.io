@@ -1,3 +1,5 @@
+![Logo](https://www.https://github.com/MoiCart/MoiCart.github.io/rec/repo-template.png)
+
 # MoiCart
 
 **_Aiding the proactive and conscientious shopper one item at a time_**
