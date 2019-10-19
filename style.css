@@ -31,15 +31,29 @@
 	}
 }
 
+@font-face {
+
+	font-family: Coves Light;
+	src: url("rec/fonts/Coves/Coves Light.otf");
+
+}
+
+@font-face {
+
+	font-family: Coves Bold;
+	src: url("rec/fonts/Coves/Coves Bold.otf")
+
+}
+
  body {
 	 width: 100vw;
 	 height: 100vh;
 	 margin: 0;
 	 padding: 0;
-	 background-image: url('/rec/home_page_img.png');
+	 background-image: url('rec/home_page_img.png');
 	 background-repeat: no-repeat;
 	 background-size: cover;
-	 background-position: center; 
+	 background-position: center;
 	 color: #fff;
 	 font-family: 'Calibri';
 	 font-weight: 300;
@@ -105,8 +119,8 @@
 .m-intro .e-text h1.part1 {
 
 	color:#FFFFFF;
-	font-family:'Coves';
-	font-weight:normal;
+	font-family:'Coves Light';
+	font-weight: normal;
 	padding: 70px 0;
 
 }
@@ -114,8 +128,8 @@
 .m-intro .e-text span.part2 {
 
 	 color:#5EFF00;
-	 font-family:'Coves';
-	 font-weight:bold;
+	 font-family:'Coves Bold';
+	 font-weight:normal;
 	 padding: -10px 70px;
 
 }
