@@ -93,7 +93,7 @@
 	 -o-animation: rotate 80s infinite linear;
 	 animation: rotate 80s infinite linear;
 }
- .main-page .title {
+ .main-page .title { 
 	 width: 785px;
 	 position: relative;
 	 z-index: 100;
