@@ -23,7 +23,7 @@ When selecting an icon, please select the correct icon for the job and keep the 
 
 Typography
 ==========
-We will be using Roboto from Google Fonts.
+We will be using Coves from ___.
 
 Links
 =====
