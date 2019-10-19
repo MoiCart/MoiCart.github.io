@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800i&display=swap');
+
 @font-face {
 
 	font-family: Coves Light;
@@ -89,7 +91,81 @@
 	 max-width: 80%;
 	 display: block;
 	 margin: 0 auto;
+	 font-family: 'Montserrat', sans-serif;
 }
+
+#button {
+
+	display: flex;
+	font-family: 'Coves';
+	font-size: 2.5rem;
+	color: white;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 250px;
+  height: 75px;
+
+	position: relative;
+	top: -2em;
+	left: calc(50% - 125px);
+
+}
+
+.get-started {
+  --borderWidth: 3px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.get-started:after {
+  content: '';
+  position: absolute;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: 4px;
+  background-size: 300% 300%;
+}
+
+.get-started.in:after {
+  animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+}
+
+/* motion */
+@keyframes gradient-animation {
+  0% {
+    background-position: 15% 0%;
+  }
+  50% {
+    background-position: 85% 100%;
+  }
+  100% {
+    background-position: 15% 0%;
+  }
+}
+
+@keyframes frame-enter {
+  0% {
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+  }
+}
+
  .bgParticles {
 	 position: absolute;
 	 width: 100%;
