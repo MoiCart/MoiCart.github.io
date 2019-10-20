@@ -7,7 +7,7 @@ The website should be calm and gentle for the user.
 
 Colours
 ========
-For Roomie, colours expose our personality to the customers and represent that we are calm and pleasing.
+For Moicart, colours expose our personality to the customers and represent that we are calm and pleasing.
 These are our color swatches:
 
 - #5EFF00
