@@ -1,5 +1,5 @@
 ***This is a template of what this file should look like take from: https://github.com/uottawa-seg1911-web/uottawa-seg1911-web.github.io 
-Overall Look and Feel of Roomie
+Overall Look and Feel of Moicart
 ===============================
 
 The overall look and feel should be minimalist and flat. We will avoid 3d buttons and 3d metal looks.
