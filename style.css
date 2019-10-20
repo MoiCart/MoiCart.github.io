@@ -109,7 +109,7 @@
   height: 75px;
 
 	position: relative;
-	top: -25%;
+	top: calc(-50%);
 	left: calc(50% - 125px);
 
 }
