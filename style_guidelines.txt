@@ -2,16 +2,18 @@
 Overall Look and Feel of Moicart
 ===============================
 
-The overall look and feel should be minimalist and flat. We will avoid 3d buttons and 3d metal looks.
-The website should be calm and gentle for the user.
+The website should look simple yet still be interactive and elegant. We want to make a paralax website for a 
+seamless user experience. 
 
 Colours
 ========
-For Moicart, colours expose our personality to the customers and represent that we are calm and pleasing.
+For Moicart, we want the colours that we use to reflect the type the type of service that we are providing. 
+We chose coulours like green and white to represent nature, energy, growth, harmony, freshness, safety, and savings. 
 These are our color swatches:
 
 - #5EFF00
 - #FFFFFF
+- #8551FF
 
 Iconography
 ===========
@@ -20,7 +22,7 @@ When selecting an icon, please select the correct icon for the job and keep the 
 
 Typography
 ==========
-We will be using Coves from ____________.
+We will be using Coves Bold from rec/fonts/Coves/Coves Bold.otf.
 
 Links
 =====
