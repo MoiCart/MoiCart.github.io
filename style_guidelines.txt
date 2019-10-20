@@ -1,5 +1,5 @@
 ***This is a template of what this file should look like take from: https://github.com/uottawa-seg1911-web/uottawa-seg1911-web.github.io 
-Overall Look and Feel of Roomie
+Overall Look and Feel of Moicart
 ===============================
 
 The overall look and feel should be minimalist and flat. We will avoid 3d buttons and 3d metal looks.
@@ -7,14 +7,11 @@ The website should be calm and gentle for the user.
 
 Colours
 ========
-For Roomie, colours expose our personality to the customers and represent that we are calm and pleasing.
+For Moicart, colours expose our personality to the customers and represent that we are calm and pleasing.
 These are our color swatches:
 
-- #583E7F
-- #DEC9FF
-- #B07CFF
-- #6F647F
-- #8D63CC
+- #5EFF00
+- #FFFFFF
 
 Iconography
 ===========
