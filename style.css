@@ -57,7 +57,7 @@
  .main-page .title {
 	 width: 785px;
 	 position: relative;
-	 top: -10%;
+	 top: -20%;
 	 z-index: 100;
 }
  .main-page .title h1 {
@@ -109,7 +109,7 @@
   height: 75px;
 
 	position: relative;
-	top: calc(-50%);
+	top: calc(-30%);
 	left: calc(50% - 125px);
 
 }
