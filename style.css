@@ -281,7 +281,7 @@ svg {
 }
 
 /* Style the sidenav links*/
-.sidenav a{
+.sidenav button{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -296,7 +296,7 @@ svg {
 }
 
 /* On mouse-over */
-.sidenav a:hover{
+.sidenav button:hover{
   color: #f1f1f1;
   background-color: rgba(133, 81, 255, 1);
 }
@@ -316,5 +316,5 @@ svg {
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav button {font-size: 18px;}
 }
