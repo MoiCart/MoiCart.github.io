@@ -138,12 +138,9 @@
 
 }
 
-.get-started:after {
+.get-started::after {
 	content: '';
 	position: absolute;
-}
-
-.get-started:hover:after {
 	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 	top: 0;
 	left: 0;
@@ -151,8 +148,16 @@
 	bottom: 0;
 	border-radius: 2px;
 	background-size: 300% 300%;
-	animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+	clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
 }
+
+.get-started.ready::after {
+		 animation: frame-leave 0.75s forwards ease-in-out, gradient-animation 4s ease-in-out infinite;
+	 }
+
+.get-started.ready:hover::after {
+	 animation: frame-enter 0.75s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+ }
 
 /* motion */
 @keyframes gradient-animation {
@@ -167,23 +172,53 @@
 	}
 }
 
-@keyframes frame-enter {
-	0% {
-		clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 100%, 100% 100%, 100% 0%, 0% 0%);
-	}
-	25% {
-		clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) 100%, 100% 100%, 100% 0%, 0% 0%);
-	}
-	50% {
-		clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, 100% 0%, 0% 0%);
-	}
-	75% {
-		-webkit-clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
-	}
-	100% {
-		-webkit-clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
-	}
-}
+@keyframes gradient-animation {
+      0% {
+        background-position: 15% 0%;
+      }
+      50% {
+        background-position: 85% 100%;
+      }
+      100% {
+        background-position: 15% 0%;
+      }
+    }
+
+    @keyframes frame-enter {
+      0% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 100%, 100% 100%, 100% 0%, 0% 0%);
+      }
+      25% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) 100%, 100% 100%, 100% 0%, 0% 0%);
+      }
+      50% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, 100% 0%, 0% 0%);
+      }
+      75% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
+      }
+      100% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
+      }
+    }
+
+    @keyframes frame-leave {
+      0% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 100%, 100% 100%, 100% 0%, 0% 0%);
+      }
+      25% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) calc(100% - 5px), calc(100% - 5px) 100%, 100% 100%, 100% 0%, 0% 0%);
+      }
+      50% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 5px, 100% 0%, 0% 0%);
+      }
+      75% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
+      }
+      100% {
+        clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
+      }
+    }
 
  .bgParticles {
 	 position: absolute;

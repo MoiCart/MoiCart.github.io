@@ -110,3 +110,10 @@ particlesJS("bgParticles",
   },
   "retina_detect": true
 })
+
+var els = document.querySelectorAll('.get-started');
+for (var i = 0; i < els.length; i++) {
+  els[i].addEventListener('mouseenter', function(e) {
+    e.target.classList.add('ready');
+  }, { once: true });
+}
