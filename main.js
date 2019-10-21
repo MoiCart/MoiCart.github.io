@@ -1,4 +1,13 @@
-//PARTICLES ORANGE//
+window.setTimeout('loadOut()', 3000)
+
+function loadOut() {
+
+  var elm = document.body
+  elm.classList.add("load");
+
+}
+
+
 particlesJS("bgParticles",
 {
   "particles": {
