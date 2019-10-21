@@ -126,3 +126,8 @@ for (var i = 0; i < els.length; i++) {
     e.target.classList.add('ready');
   }, { once: true });
 }
+
+//Temporary scroll frunction
+function pageScroll() {
+      window.scrollBy(0, 750);
+}
