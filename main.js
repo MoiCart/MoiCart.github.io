@@ -1,4 +1,43 @@
-//PARTICLES ORANGE//
+var imgs = document.images,
+    len = imgs.length,
+    check = [],
+    counter = 0;
+
+function textChange() {
+
+  document.getElementById("text").innerText = "Done!";
+  document.getElementById("text").style.left = "10px";
+  setTimeout(loadOut, 1000);
+
+}
+
+setTimeout(textChange, 1000);
+
+function isLoaded(){
+
+  [].forEach.call(imgs, function(img, i) {
+      check[i]=(img.complete);
+  } );
+
+  return !(check.includes(false))
+
+}
+
+function incrementCounter() {
+    counter++;
+    if ( counter === len ) {
+        setTimeout('loadOut', 1000);
+    }
+}
+
+function loadOut() {
+
+  scroll(0,0);
+  var elm = document.body;
+  elm.classList.add("load");
+
+}
+
 particlesJS("bgParticles",
 {
   "particles": {
