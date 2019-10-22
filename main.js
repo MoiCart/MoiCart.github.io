@@ -2,9 +2,7 @@ var imgs = document.images,
     len = imgs.length,
     counter = 0;
 
-console.log(imgs)
-
-window.setTimeout('load', 1000);
+setTimeout(load, 1000);
 
 function load() {
   [].forEach.call(imgs, function(img) {
@@ -15,7 +13,6 @@ function load() {
 
 function incrementCounter() {
     counter++;
-    console.log(counter)
     if ( counter === len ) {
         loadOut();
     }
