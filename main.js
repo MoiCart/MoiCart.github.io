@@ -8,6 +8,7 @@ var imgs = document.images,
   [].forEach.call(imgs, function(img) {
       img.addEventListener('load', incrementCounter, false);
       check.push(img.complete);
+<<<<<<< HEAD
   } );
 
 function textChange() {
@@ -26,6 +27,26 @@ function isLoaded(){
       check[i]=(img.complete);
   } );
 
+=======
+  } );
+
+function textChange() {
+
+  document.getElementById("text").innerText = "Done!";
+  document.getElementById("text").style.left = "10px";
+  setTimeout(loadOut, 1000);
+
+}
+
+setTimeout(textChange, 1000);
+
+function isLoaded(){
+
+  [].forEach.call(imgs, function(img, i) {
+      check[i]=(img.complete);
+  } );
+
+>>>>>>> 5d3594f7cf0118d148df8653448ff5bbfbe4efda
   return !(check.includes(false))
 
 }
