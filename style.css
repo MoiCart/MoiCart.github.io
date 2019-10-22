@@ -90,24 +90,23 @@
 		border: 3px solid transparent;
     border-top-color: #5EFF00;
 		border-radius: 50%;
-
-		animation: spin 0.3s linear infinite;\
+		animation: spin 0.3s linear infinite;
 
 }
 
 #wrapper #loader .preloader.first {
 
-	position: relative;
-	left: 12%;
-	top: 1%;
+	position: absolute;
+	left: 115px;
+	top: 125px;
 
 }
 
 #wrapper #loader .preloader.second {
 
- position: relative;
- left: 2%;
- top: -3%;
+ position: absolute;
+ left: 20px;
+ top: 125px;
 
 }
 
@@ -132,7 +131,8 @@
 .load #wrapper {
 
 	transform: translateY(-100%);
-	transition: all 0.3s 0.6s ease-out;
+	opacity: 0;
+	transition: all 0.3s 1s ease-out;
 	visibility: hidden;
 
 }
@@ -144,6 +144,37 @@
 
 }
 
+#wrapper #loader h4.text {
+
+	position: relative;
+	left: -20px;
+	font-family: 'Coves Bold';
+	font-size: 65px;
+
+}
+
+#horizontal-scroll-wrapper {
+	width:100vh;
+	height:100vw;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin: top left;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	position: absolute;
+}
+
+#inner-horizontal-scroll-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 400vw;
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin: top left;
+}
+
+#inner-horizontal-scroll-wrapper .block {
+	width: 100vw;
+	height: 100vh;
+}
 
  .main-page {
 	 text-align: center;
@@ -229,6 +260,8 @@
 	top: -30%;
 	left: calc(50% - 125px);
 
+	cursor: pointer;
+
 }
 
 .get-started {
@@ -270,8 +303,8 @@
 }
 
 .get-started.ready::after {
-		 animation: frame-leave 0.75s forwards ease-in-out, gradient-animation 4s ease-in-out infinite;
-	 }
+	 animation: frame-leave 0.75s forwards ease-in-out, gradient-animation 4s ease-in-out infinite;
+ }
 
 .get-started.ready:hover::after {
 	 animation: frame-enter 0.75s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
@@ -345,7 +378,14 @@
 
 svg {
 	display:block;
-	margin: -20px;
+}
+
+.scew-one {
+	width: 10vw !important;
+}
+
+.two {
+	background-color: white;
 }
 
 .about-page {
@@ -364,12 +404,17 @@ svg {
 
 .scew-two {
 	color: black;
+	width: 10vw !important;
 	background-color: white;
 }
 
+.three {
+	background-color: black;
+}
+
 .contact-page {
-	height: 800px;
-	background-color: black;;
+	height: 100%;
+	background-color: black;
 }
 
 .contact-page .sub-title {
@@ -379,6 +424,7 @@ svg {
 	font-weight:normal;
 	padding: -10px 70px;
 	padding-top: 50px;
+	transform: rotate(90);
 }
 
 /* Fixed sidenav, full height */
