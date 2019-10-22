@@ -90,8 +90,7 @@
 		border: 3px solid transparent;
     border-top-color: #5EFF00;
 		border-radius: 50%;
-
-		animation: spin 0.3s linear infinite;\
+		animation: spin 0.3s linear infinite;
 
 }
 
@@ -279,8 +278,8 @@
 }
 
 .get-started.ready::after {
-		 animation: frame-leave 0.75s forwards ease-in-out, gradient-animation 4s ease-in-out infinite;
-	 }
+	 animation: frame-leave 0.75s forwards ease-in-out, gradient-animation 4s ease-in-out infinite;
+ }
 
 .get-started.ready:hover::after {
 	 animation: frame-enter 0.75s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
