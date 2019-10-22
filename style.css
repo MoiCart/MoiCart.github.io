@@ -237,6 +237,8 @@
 	top: -30%;
 	left: calc(50% - 125px);
 
+	cursor: pointer;
+
 }
 
 .get-started {
