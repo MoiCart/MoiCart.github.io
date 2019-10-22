@@ -1,33 +1,42 @@
-***This is a template of what this file should look like take from: https://github.com/uottawa-seg1911-web/uottawa-seg1911-web.github.io 
 Overall Look and Feel of Moicart
 ===============================
 
-The website should look simple yet still be interactive and elegant. We want to make a paralax website for a 
-seamless user experience. 
+- The website should look simple yet still be interactive and elegant. We want to make a paralax website for a 
+  seamless user experience. 
+- The website will enforce horizontal scrolling to create an engaging and unique 
+  experience for the user. Users will be able to flawlessly transverse through the website with button shortcuts
+  and a visual navigation bar which indicates which segment of the paralax page they are on. 
+- The website's overall design will emphasize the use of interactive elements with important information or objects.
 
 Colours
 ========
-For Moicart, we want the colours that we use to reflect the type the type of service that we are providing. 
-We chose coulours like green and white to represent nature, energy, growth, harmony, freshness, safety, and savings. 
+- For Moicart, we want the colours that we use to reflect the type the type of service that we are providing. 
+  We chose coulours like green and white to represent nature, energy, growth, harmony, freshness, safety, and savings. 
+
 These are our color swatches:
 
 - #5EFF00
 - #FFFFFF
 - #8551FF
+- #FF005E
+- #A100FF
+- #005EFF
 
 Iconography
 ===========
-We will focus on using icons that have a 'flat' design, which adheres to the overall look and feel.
-When selecting an icon, please select the correct icon for the job and keep the following in mind:
+- We will focus on using icons that have a 'flat' design, which adheres to the overall look and feel of a minimalist design.
 
 Typography
 ==========
-We will be using Coves Bold from rec/fonts/Coves/Coves Bold.otf.
+- We will be using Coves Bold from rec/fonts/Coves/Coves Bold.otf.
 
 Links
 =====
-Links will not be underlined and should change color when a user hovers over it.
+- Links will not be underlined and should change color when a user hovers over it.
 
 Buttons
 =======
-Buttons will be flat designed using the chosen colors outlined above.
+- Generic buttons will be flat designed using the chosen colors outlined above. 
+- Key buttons whuch direct the user to download the application or
+  signup to the service will be enhanced to emphesize attention through shifting
+  throughout the outlined colour spectrum.
