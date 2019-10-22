@@ -1,20 +1,39 @@
 var imgs = document.images,
     len = imgs.length,
+    check = [],
     counter = 0;
 
-setTimeout(load, 1000);
 
-function load() {
+
   [].forEach.call(imgs, function(img) {
       img.addEventListener('load', incrementCounter, false);
+      check.push(img.complete);
   } );
+
+function textChange() {
+
+  document.getElementById("text").innerText = "Done!";
+  document.getElementById("text").style.left = "10px";
+  setTimeout(loadOut, 1000);
+
+}
+
+setTimeout(textChange, 1000);
+
+function isLoaded(){
+
+  [].forEach.call(imgs, function(img, i) {
+      check[i]=(img.complete);
+  } );
+
+  return !(check.includes(false))
 
 }
 
 function incrementCounter() {
     counter++;
     if ( counter === len ) {
-        loadOut();
+        setTimeout('loadOut', 1000);
     }
 }
 
@@ -148,4 +167,8 @@ for (var i = 0; i < els.length; i++) {
 //Temporary scroll frunction
 function pageScroll() {
       window.scrollBy(0, 750);
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
