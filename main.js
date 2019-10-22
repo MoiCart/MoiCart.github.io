@@ -39,7 +39,8 @@ function incrementCounter() {
 
 function loadOut() {
 
-  var elm = document.body
+  scroll(0,0);
+  var elm = document.body;
   elm.classList.add("load");
 
 }
