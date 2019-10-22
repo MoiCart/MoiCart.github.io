@@ -1,4 +1,25 @@
-window.setTimeout('loadOut()', 3000)
+var imgs = document.images,
+    len = imgs.length,
+    counter = 0;
+
+console.log(imgs)
+
+window.setTimeout(load(), 2000);
+
+function load() {
+  [].forEach.call(imgs, function(img) {
+      img.addEventListener('load', incrementCounter, false);
+  } );
+
+}
+
+function incrementCounter() {
+    counter++;
+    console.log(counter)
+    if ( counter === len ) {
+        loadOut();
+    }
+}
 
 function loadOut() {
 

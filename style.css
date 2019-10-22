@@ -57,8 +57,8 @@
 	position: relative;
 	left: 0;
 	top: 0;
-	width: 20%;
-	height: auto;
+	width: 196px;
+	height: 119px;
 
 }
 
@@ -76,7 +76,22 @@
 	border-radius: 50%;
 	z-index: 1001;
 
-	animation: spin 1.5s linear infinite reverse;
+	animation: spin 0.75s linear infinite reverse;
+
+}
+
+#wrapper #loader .preloader.first:after, #wrapper #loader .preloader.second:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+		border: 3px solid transparent;
+    border-top-color: #5EFF00;
+		border-radius: 50%;
+
+		animation: spin 0.3s linear infinite;\
 
 }
 
@@ -94,20 +109,6 @@
  left: 2%;
  top: -3%;
 
-}
-
-#wrapper #loader .preloader.first:after, #wrapper #loader .preloader.second:after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-		border: 3px solid transparent;
-    border-top-color: #5EFF00;
-		border-radius: 50%;
-
-		animation: spin 0.5s linear infinite ;
 }
 
 #wrapper .loader-transition {
