@@ -4,7 +4,7 @@ var imgs = document.images,
 
 console.log(imgs)
 
-window.setTimeout('load', 500);
+window.setTimeout('load', 1000);
 
 function load() {
   [].forEach.call(imgs, function(img) {
