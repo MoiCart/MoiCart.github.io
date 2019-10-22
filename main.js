@@ -1,4 +1,31 @@
-//PARTICLES ORANGE//
+var imgs = document.images,
+    len = imgs.length,
+    counter = 0;
+
+setTimeout(load, 1000);
+
+function load() {
+  [].forEach.call(imgs, function(img) {
+      img.addEventListener('load', incrementCounter, false);
+  } );
+
+}
+
+function incrementCounter() {
+    counter++;
+    if ( counter === len ) {
+        loadOut();
+    }
+}
+
+function loadOut() {
+
+  var elm = document.body
+  elm.classList.add("load");
+
+}
+
+
 particlesJS("bgParticles",
 {
   "particles": {
@@ -116,4 +143,9 @@ for (var i = 0; i < els.length; i++) {
   els[i].addEventListener('mouseenter', function(e) {
     e.target.classList.add('ready');
   }, { once: true });
+}
+
+//Temporary scroll frunction
+function pageScroll() {
+      window.scrollBy(0, 750);
 }

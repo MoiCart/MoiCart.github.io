@@ -2,11 +2,20 @@
 <html>
     <head>
         <script type="text/javascript" src="rec/particles.js"></script>
+        <script type="text/javascript" src="rec/imagesloaded.pkgd.js"></script>
         <script type="text/javascript" src="main.js" defer="defer"></script>
         <link rel="stylesheet" href="style.css">
         <title></title>
     </head>
     <body>
+        <div id="wrapper">
+          <div id="loader">
+            <img class="cart" src="rec/Shopping Cart.png"></img>
+            <div class="preloader first"></div>
+            <div class="preloader second"></div>
+          </div>
+            <div class="loader-transition"></div>
+        </div>
         <!-- Main Page Content -->
         <div class="main-page">
         	<div class="title" id="test">
@@ -22,7 +31,7 @@
         </div>
         <!-- Sidebar -->
         <div class="sidenav">
-          <button type="button">About</button>
+          <button type="button" onclick="pageScroll()">About</button>
           <button type="button">Services</button>
           <button type="button">Clients</button>
           <button type="button">Contact</button>
