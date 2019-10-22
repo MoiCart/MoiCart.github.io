@@ -168,7 +168,3 @@ for (var i = 0; i < els.length; i++) {
 function pageScroll() {
       window.scrollBy(0, 750);
 }
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
