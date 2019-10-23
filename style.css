@@ -166,7 +166,7 @@
 #inner-horizontal-scroll-wrapper {
 	display: flex;
 	flex-direction: row;
-	width: 320vw;
+	width: 580vw;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin: top left;
 }
@@ -418,6 +418,34 @@ svg {
 
 .contact-page {
 	height: 100%;
+	background-color: black;
+}
+
+.scew-three {
+	color: white !important;
+	width: 20vw !important;
+	background-color: black;
+}
+
+.four {
+	background-color: white;
+}
+
+.features-page {
+	background-color: white;
+}
+
+.scew-four {
+	color: black;
+	width: 20vw !important;
+	background-color: white;
+}
+
+.five {
+	background-color: black;
+}
+
+.pricing-page {
 	background-color: black;
 }
 
