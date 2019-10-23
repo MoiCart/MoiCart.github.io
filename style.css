@@ -418,7 +418,7 @@ svg {
 }
 
 .scew-three {
-	color: white !important;
+	fill: white !important;
 	width: 20vw !important;
 	background-color: black;
 }
