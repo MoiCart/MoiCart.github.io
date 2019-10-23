@@ -335,9 +335,11 @@
       }
       75% {
         clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
+				-webkit-clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
       }
       100% {
         clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
+				-webkit-clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
       }
     }
 
@@ -353,9 +355,11 @@
       }
       75% {
         clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
+				-webkit-clip-path: polygon(0% 100%, 5px 100%, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 5px, 5px 0%, 0% 0%);
       }
       100% {
         clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
+				-webkit-clip-path: polygon(0% 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 5px 100%, 0% 100%);
       }
     }
 
