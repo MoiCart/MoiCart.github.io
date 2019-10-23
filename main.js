@@ -38,7 +38,6 @@ function loadOut() {
 
 }
 
-
 particlesJS("bgParticles",
 {
   "particles": {
@@ -160,5 +159,5 @@ for (var i = 0; i < els.length; i++) {
 
 //Temporary scroll frunction
 function pageScroll() {
-      window.scrollBy(0, 750);
+      window.scrollBy(1000, 0);
 }
