@@ -1,3 +1,12 @@
+const scroller = new SweetScroll(
+  {
+    horizontal: true,
+  },
+  '#horizontal-scroll-wrapper',
+);
+
+console.log(document.getElementById("about").getBoundingClientRect().left)
+
 var imgs = document.images,
     len = imgs.length,
     check = [],

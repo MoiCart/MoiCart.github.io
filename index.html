@@ -3,11 +3,12 @@
     <head>
         <script type="text/javascript" src="rec/particles.js"></script>
         <script type="text/javascript" src="rec/imagesloaded.pkgd.js"></script>
+        <script type="text/javascript" src="rec/sweet-scroll.min.js"></script>
         <script type="text/javascript" src="main.js" defer="defer"></script>
         <link rel="stylesheet" href="style.css">
         <title></title>
     </head>
-    <body>
+    <body id="container">
         <!-- Loading Screen -->
         <div id="wrapper">
           <div id="loader">
@@ -39,7 +40,7 @@
                 </div>
                 <div id="bgParticles" class="bgParticles"></div>
               </div>
-              <div class="get-started" id="button">
+              <div onClick="scroller.to(document.getElementById('about').getBoundingClientRect().left)" class="get-started" id="button">
                   <h4 class="part1">Get <span class="part2">Started</span></h4>
               </div>
             </div>
@@ -51,7 +52,7 @@
             <div class="block two">
               <!-- About Us Information -->
               <div class="about-page">
-                  <h2 class="sub-title">About Us</h2>
+                  <h2 class="sub-title" id="about">About Us</h2>
                   <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna mi, suscipit in lacus non, molestie sodales sapien. Vestibulum ut dolor ut metus hendrerit varius a at ligula. Quisque tempus mauris id pellentesque convallis. Nullam feugiat at enim gravida porta. Suspendisse a pellentesque lorem. Proin fringilla ipsum nec arcu eleifend, pellentesque ultrices elit iaculis. Curabitur varius odio semper, elementum sapien nec, tempor felis. Fusce sit amet ultricies diam. Aliquam placerat scelerisque enim, fringilla eleifend nulla viverra nec.
 
                   Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ac imperdiet quam. Donec aliquet purus vitae dui fermentum consequat. Nam vitae ante turpis. Ut quis vulputate odio. Aenean ultricies tortor id ex ullamcorper, non facilisis dolor lacinia. Aliquam consequat velit vel augue interdum laoreet. Maecenas a mollis neque, eget volutpat dui. Pellentesque dignissim enim non diam pulvinar, quis molestie velit pharetra. Praesent sed enim lacinia, facilisis enim quis, tempus elit. Nulla id consequat nulla, vitae finibus nisl. Quisque elementum, arcu ut volutpat tincidunt, elit lacus interdum justo, a interdum quam ante ut est.</p>
@@ -73,11 +74,11 @@
             </div>
             <!-- Scew #3 -->
             <svg class="block scew-three" viewBox="0 0 100 10" preserveAspectRatio="none">
-              <polygon points="60,20 100,0 100,100"/>
+              <polygon color="white" points="60,20 100,0 100,100"/>
             </svg>
             <!-- Content After Scew #3 -->
             <div class="block four">
-              <div class="features-page">
+              <div class="features-page" id="a">
               </div>
             </div>
             <!-- Scew #4 -->
