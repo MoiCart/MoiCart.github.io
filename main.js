@@ -94,11 +94,11 @@ function loadOut() {
 
 }
 
-/*particlesJS("bgParticles",
+particlesJS("bgParticles",
 {
   "particles": {
     "number": {
-      "value": 355,
+      "value": 96,
       "density": {
         "enable": true,
         "value_area": 800
@@ -124,11 +124,11 @@ function loadOut() {
     },
     "opacity": {
       "value": 1,
-      "random": true,
+      "random": false,
       "anim": {
-        "enable": true,
-        "speed": 0.32460945425035526,
-        "opacity_min": 0,
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
         "sync": false
       }
     },
@@ -137,30 +137,30 @@ function loadOut() {
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 4,
-        "size_min": 0.3,
+        "speed": 40,
+        "size_min": 0.1,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 80.11985930952699,
+      "distance": 128.19177489524316,
       "color": "#ffffff",
-      "opacity": 0.20029964827381747,
+      "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 4,
       "direction": "none",
       "random": true,
       "straight": false,
-      "out_mode": "bounce",
+      "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
-        "rotateX": 2643.9553572143905,
-        "rotateY": 961.4383117143238
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
       }
     }
   },
@@ -173,26 +173,26 @@ function loadOut() {
       },
       "onclick": {
         "enable": false,
-        "mode": "repulse"
+        "mode": "push"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 119.88011988011988,
+        "distance": 400,
         "line_linked": {
           "opacity": 1
         }
       },
       "bubble": {
-        "distance": 109.5556908094949,
-        "size": 0,
-        "duration": 0.9738283627510659,
+        "distance": 133.90139987827155,
+        "size": 4.057618178129441,
+        "duration": 2,
         "opacity": 0,
         "speed": 3
       },
       "repulse": {
-        "distance": 154.18949076891874,
+        "distance": 200,
         "duration": 0.4
       },
       "push": {
@@ -204,7 +204,7 @@ function loadOut() {
     }
   },
   "retina_detect": true
-})*/
+});
 
 var els = document.querySelectorAll('.get-started');
 for (var i = 0; i < els.length; i++) {
