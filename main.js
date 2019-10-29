@@ -1,11 +1,58 @@
+window.onload = init;
+
+function init() {
+
+    if (window.Event) {
+
+      document.captureEvents(Event.MOUSEMOVE);
+
+    }
+
+      document.getElementById("hover").onmousemove = changeCursorXY;
+
+}
+
+function changeCursorXY(e) {
+
+  if (getComputedStyle(document.getElementById("menu_button")).getPropertyValue('--button_hover_flag') == 1 || getComputedStyle(document.getElementById("menu_navbar")).getPropertyValue('--button_hover_flag') == 1) {
+
+    document.getElementById("menu_button").classList.add("change");
+
+  } else {
+
+    document.getElementById("menu_button").classList.remove("change");
+
+  }
+
+  if (getComputedStyle(document.getElementById("bounding-box")).getPropertyValue('--flag') == 1) {
+
+    cursorX = (window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
+    cursorY = (window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+
+    if ((cursorY < document.getElementById("bounding-box").getBoundingClientRect().bottom) && (cursorX - 25 > 0 && cursorX - 25 < document.getElementById("bounding-box").getBoundingClientRect().right)) {
+      document.getElementById("menu_button").style.transition = "0.25s"
+      document.getElementById("menu_button").style.left = String(cursorX - 25).concat("px");
+
+    } else {
+
+      document.getElementById("menu_button").style.transition = "1s"
+      document.getElementById("menu_button").style.left = "30px";
+
+    }
+
+  }
+
+    document.getElementById("hover").onmouseleave = function() {document.getElementById("menu_button").style.transition = "1s"; document.getElementById("menu_button").style.left = "30px";};
+
+}
+
+
 const scroller = new SweetScroll(
   {
     horizontal: true,
   },
   '#horizontal-scroll-wrapper',
 );
-
-console.log(document.getElementById("about").getBoundingClientRect().left)
 
 var imgs = document.images,
     len = imgs.length,
@@ -47,7 +94,7 @@ function loadOut() {
 
 }
 
-particlesJS("bgParticles",
+/*particlesJS("bgParticles",
 {
   "particles": {
     "number": {
@@ -157,7 +204,7 @@ particlesJS("bgParticles",
     }
   },
   "retina_detect": true
-})
+})*/
 
 var els = document.querySelectorAll('.get-started');
 for (var i = 0; i < els.length; i++) {

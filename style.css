@@ -27,7 +27,9 @@
 	 color: #fff;
 	 font-family: 'Calibri';
 	 font-weight: 300;
-	 
+	 overflow-y: hidden;
+	 overflow-x: hidden;
+
 }
 
 #wrapper {
@@ -418,9 +420,17 @@ svg {
 	background-color: black;
 }
 
-.contact-page {
-	height: 100%;
-	background-color: black;
+.features-page {
+	color: white;
+	height: 800px;
+}
+
+.feautres-page .sub-title {
+	text-align: center;
+	font-family:'Coves Bold';
+	font-weight:normal;
+	padding: -10px 70px;
+	padding-top: 50px;
 }
 
 .scew-three {
@@ -433,9 +443,10 @@ svg {
 	background-color: white;
 }
 
-.features-page {
-	background-color: white;
+.pricing-page {
+	background-color: black;
 }
+
 
 .scew-four {
 	color: black;
@@ -447,7 +458,8 @@ svg {
 	background-color: black;
 }
 
-.pricing-page {
+.features-page {
+	height: 100%;
 	background-color: black;
 }
 
@@ -461,43 +473,132 @@ svg {
 	transform: rotate(90);
 }
 
-/* Fixed sidenav, full height */
-.sidenav {
-  transition: 0.3s;
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -100px;
-  background-color: rgba(17,17,17,.5);
-  overflow-x: hidden;
-  padding-top: 20px;
+.gooey {
+
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	bottom: 0px;
+	z-index:2;
+
+	filter: url('#goo');
+
 }
 
-/* Style the sidenav links*/
-.sidenav button{
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #ffffff;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+.gooey .bounding-box {
+
+	--flag: 0;
+	position: absolute;
+	width: calc(100% - 80px);
+	height: 110px;
+	bottom: 20px;
+	left: 30px;
+	z-index:2;
+
 }
 
-/* On mouse-over */
-.sidenav button:hover{
-  color: #f1f1f1;
-  background-color: rgba(133, 81, 255, 1);
+.gooey .bounding-box:hover {
+
+	--flag: 1;
+
 }
 
-.sidenav:hover{
-  left: 0;
+.gooey .menu .button {
+
+	--button_hover_flag: 0;
+	display: inline-block;
+	position: absolute;
+	background: #8551FF;
+	left:30px;
+	bottom: 30px;
+	top:calc(60% - 25px);
+	width:50px;
+	height:50px;
+	border-radius: 100%;
+	z-index: 4;
+	transition: 0.25s;
+
+}
+
+.gooey .menu .button:hover {
+
+	--button_hover_flag: 1;
+
+}
+
+.gooey .menu .button .hamburger-1, .gooey .menu .button .hamburger-2, .gooey .menu .button .hamburger-3 {
+
+	position: relative;
+	top: 11px;
+	width: 30px;
+	height: 4px;
+	background-color: #FFFFFF;
+	margin: 4px 10px;
+	transition: 0.4s;
+
+}
+
+.change .hamburger-1 {
+  -webkit-transform: translate(0px, 8px) rotate(-45deg);
+  transform: translate(0px, 8px) rotate(-45deg);
+}
+
+.change .hamburger-2 {opacity: 0;}
+
+.change .hamburger-3 {
+  -webkit-transform: translate(0px, -8px) rotate(45deg);
+  transform: translate(0px, -8px) rotate(45deg);
+}
+
+ .gooey .menu .button:hover + .navbar {
+
+	bottom: 0px;
+
+}
+
+.gooey .menu .navbar ul {
+
+	list-style-type: none;
+  margin: 0;
+  padding-left: 5%;
+
+}
+
+.gooey .menu .navbar ul li {
+
+	float: left;
+
+}
+
+.gooey .menu .navbar ul li a {
+
+	display: block;
+	font-family: 'Coves Bold';
+	font-size: 20px;
+	padding-top: 10px;
+  padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+.gooey .menu .navbar:hover {
+
+	bottom:0px;
+	--button_hover_flag: 1;
+
+}
+
+.gooey .menu .navbar {
+
+	position: absolute;
+	background: #8551FF;
+	left: -5%;
+	bottom: -50px;
+	width: 110%;
+	height: 50px;
+	z-index: 3;
+	transition: 0.5s;
+
 }
 
 /* Main content */

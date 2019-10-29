@@ -6,6 +6,7 @@
         <script type="text/javascript" src="rec/sweet-scroll.min.js"></script>
         <script type="text/javascript" src="main.js" defer="defer"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rec/text_hover.min.css">
         <title></title>
     </head>
     <body id="container">
@@ -19,19 +20,41 @@
           </div>
             <div class="loader-transition"></div>
         </div>
-        <!-- Sidebar -->
-        <div class="sidenav">
-          <button type="button" onclick="pageScroll()">About</button>
-          <button type="button">Features</button>
-          <button type="button">Pricing</button>
-          <button type="button">Contact</button>
+        <!-- Menu -->
+        <div class="gooey" id="hover">
+          <div class="menu">
+              <div class="button" id="menu_button">
+                <div class="hamburger-1"></div>
+                <div class="hamburger-2"></div>
+                <div class="hamburger-3"></div>
+              </div>
+              <div class="navbar" id="menu_navbar">
+                <ul id="table">
+                  <li id="1"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('main').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Home</a></li>
+                  <li id="2"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">About</a></li>
+                  <li id="3"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Features</a></li>
+                  <li id="4"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('pricing').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Pricing</a></li>
+                  <li id="5"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('contact').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Contact Us</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="bounding-box" id="bounding-box"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+              </filter>
+            </defs>
+        </svg>
         </div>
         <!-- Scrollable Website -->
         <div id="horizontal-scroll-wrapper">
           <div id="inner-horizontal-scroll-wrapper">
             <!-- Main Page Content -->
             <div class="block one">
-              <div class="main-page">
+              <div class="main-page" id="main">
                 <div class="title" id="test">
                   <h1 class="part1">Moi<span class="part2">Cart</span></h1>
                   <p class="motto">
@@ -40,7 +63,7 @@
                 </div>
                 <div id="bgParticles" class="bgParticles"></div>
               </div>
-              <div onClick="scroller.to(document.getElementById('about').getBoundingClientRect().left)" class="get-started" id="button">
+              <div onClick="scroller.to(document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)" class="get-started" id="button">
                   <h4 class="part1">Get <span class="part2">Started</span></h4>
               </div>
             </div>
@@ -65,8 +88,8 @@
             <!-- Content After Scew #2 -->
             <div class="block three">
               <!-- Contact Information -->
-              <div id="1"class="contact-page">
-                  <h2 class="sub-title">Contact Us</h2>
+              <div id="features" class="features-page">
+                  <h2 class="sub-title">Features</h2>
                   <p>Mauris dignissim viverra justo sit amet pulvinar. Aliquam porttitor at nibh ut blandit. Fusce mollis, arcu nec vehicula commodo, orci orci malesuada ipsum, ut interdum tortor ante vel libero. Donec quis eros in ex aliquet vulputate. Maecenas mollis lacus odio, eu commodo lectus malesuada vitae. Vivamus vestibulum sollicitudin venenatis. Quisque odio erat, maximus vitae felis in, laoreet egestas sapien. Quisque elementum viverra iaculis. Nam ullamcorper sagittis consectetur.
 
                   Duis fringilla risus sit amet lorem sollicitudin, vitae lobortis libero consectetur. Duis maximus bibendum tellus at vestibulum. Sed hendrerit lacus ac orci viverra, ut viverra arcu scelerisque. In egestas at nisi nec viverra. Quisque nec orci varius, ultrices quam ut, venenatis elit. Nunc leo quam, vestibulum nec nisl a, mollis ornare elit. Curabitur sodales mi nec elementum posuere. Phasellus quis eleifend leo. Cras risus quam, tristique id feugiat at, facilisis quis risus. Morbi bibendum quam in consequat tempor. Sed velit velit, tempor vitae lorem non, consectetur eleifend ex.</p>
@@ -78,7 +101,7 @@
             </svg>
             <!-- Content After Scew #3 -->
             <div class="block four">
-              <div class="features-page" id="a">
+              <div class="pricing-page" id="pricing">
               </div>
             </div>
             <!-- Scew #4 -->
@@ -87,7 +110,7 @@
             </svg>
             <!-- Content After Scew #4-->
             <div class="block five">
-              <div class="pricing-page">
+              <div class="contact-page" id="contact">
               </div>
             </div>
           </div>
