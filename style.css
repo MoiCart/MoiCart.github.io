@@ -27,7 +27,7 @@
 	 color: #fff;
 	 font-family: 'Calibri';
 	 font-weight: 300;
-	 
+
 }
 
 #wrapper {
@@ -237,7 +237,6 @@
 	 font-family:'Coves Bold';
 	 font-weight:normal;
 	 padding: -10px 70px;
-
 }
  .main-page .title .motto {
 	 max-width: 80%;
@@ -512,4 +511,9 @@ svg {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav button {font-size: 18px;}
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
 }
