@@ -98,7 +98,7 @@ particlesJS("bgParticles",
 {
   "particles": {
     "number": {
-      "value": 96,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
