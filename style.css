@@ -608,13 +608,6 @@ svg {
   padding: 0px 10px;
 }
 
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav button {font-size: 18px;}
-}
-
 ::-webkit-scrollbar {
 	width: 1px !important;
 }
