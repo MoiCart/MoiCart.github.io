@@ -616,5 +616,5 @@ svg {
 }
 
 ::-webkit-scrollbar {
-	width: 20px;
+	width: 1px !important;
 }
