@@ -1,4 +1,12 @@
 window.onload = init;
+var scrollCheck;
+
+function scrollToElm(elm) {
+
+  scrollCheck = true;
+  scroller.to(document.getElementById(elm).getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)
+
+}
 
 function init() {
 
@@ -50,8 +58,12 @@ function changeCursorXY(e) {
 const scroller = new SweetScroll(
   {
     horizontal: true,
+    complete: (isCancel, scroller) => {
+     scrollCheck = false;
+   },
   },
   '#horizontal-scroll-wrapper',
+
 );
 
 var imgs = document.images,

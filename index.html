@@ -31,11 +31,11 @@
               </div>
               <div class="navbar" id="menu_navbar">
                 <ul id="table">
-                  <li id="1"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('main').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Home</a></li>
-                  <li id="2"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">About</a></li>
-                  <li id="3"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Features</a></li>
-                  <li id="4"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('pricing').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Pricing</a></li>
-                  <li id="5"><a class="text-hover text-hover-underline-opening" onClick="scroller.to(document.getElementById('contact').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)">Contact Us</a></li>
+                  <li id="1"><a class="text-hover text-hover-underline-opening" onClick="scrollToElm('main')">Home</a></li>
+                  <li id="2"><a class="text-hover text-hover-underline-opening" onClick="scrollToElm('about')">About</a></li>s
+                  <li id="3"><a class="text-hover text-hover-underline-opening" onClick="scrollToElm('features')">Features</a></li>
+                  <li id="4"><a class="text-hover text-hover-underline-opening" onClick="scrollToElm('pricing')">Pricing</a></li>
+                  <li id="5"><a class="text-hover text-hover-underline-opening" onClick="scrollToElm('contact')">Contact Us</a></li>
                 </ul>
               </div>
           </div>
@@ -51,7 +51,7 @@
         </svg>
         </div>
         <!-- Scrollable Website -->
-        <div class="outer-wrapper" id="horizontal-scroll-wrapper">
+        <div class="outer-wrapper" id="horizontal-scroll-wrapper" onscroll="console.log('aaa')">
           <div class="inner-wrapper" id="inner-horizontal-scroll-wrapper">
             <!-- Main Page Content -->
             <div class="block one">
@@ -64,7 +64,7 @@
                 </div>
                 <div id="bgParticles" class="bgParticles"></div>
               </div>
-              <div onClick="scroller.to(document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)" class="get-started" id="button">
+              <div onClick="scrollToElm('about')" class="get-started" id="button">
                   <h4 class="part1">Get <span class="part2">Started</span></h4>
               </div>
             </div>
