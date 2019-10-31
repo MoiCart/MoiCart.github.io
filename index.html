@@ -7,7 +7,7 @@
         <script type="text/javascript" src="main.js" defer="defer"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="rec/text_hover.min.css">
-        <title></title>
+        <title>moicart</title>
     </head>
     <body id="container">
         <!-- Loading Screen -->
@@ -50,8 +50,8 @@
         </svg>
         </div>
         <!-- Scrollable Website -->
-        <div id="horizontal-scroll-wrapper">
-          <div id="inner-horizontal-scroll-wrapper">
+        <div class="outer-wrapper" id="horizontal-scroll-wrapper">
+          <div class="inner-wrapper" id="inner-horizontal-scroll-wrapper">
             <!-- Main Page Content -->
             <div class="block one">
               <div class="main-page" id="main">
@@ -67,53 +67,17 @@
                   <h4 class="part1">Get <span class="part2">Started</span></h4>
               </div>
             </div>
-            <!-- Scew #1 -->
-            <svg class="block scew-one" viewBox="0 0 100 10" preserveAspectRatio="none">
-                <polygon fill="white" points="0,20 100,0 100,100"/>
-            </svg>
-            <!-- Content After Scew #1 -->
-            <div class="block two">
-              <!-- About Us Information -->
-              <div class="about-page">
-                  <h2 class="sub-title" id="about">About Us</h2>
-                  <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna mi, suscipit in lacus non, molestie sodales sapien. Vestibulum ut dolor ut metus hendrerit varius a at ligula. Quisque tempus mauris id pellentesque convallis. Nullam feugiat at enim gravida porta. Suspendisse a pellentesque lorem. Proin fringilla ipsum nec arcu eleifend, pellentesque ultrices elit iaculis. Curabitur varius odio semper, elementum sapien nec, tempor felis. Fusce sit amet ultricies diam. Aliquam placerat scelerisque enim, fringilla eleifend nulla viverra nec.
 
-                  Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ac imperdiet quam. Donec aliquet purus vitae dui fermentum consequat. Nam vitae ante turpis. Ut quis vulputate odio. Aenean ultricies tortor id ex ullamcorper, non facilisis dolor lacinia. Aliquam consequat velit vel augue interdum laoreet. Maecenas a mollis neque, eget volutpat dui. Pellentesque dignissim enim non diam pulvinar, quis molestie velit pharetra. Praesent sed enim lacinia, facilisis enim quis, tempus elit. Nulla id consequat nulla, vitae finibus nisl. Quisque elementum, arcu ut volutpat tincidunt, elit lacus interdum justo, a interdum quam ante ut est.</p>
-              </div>
-            </div>
-            <!-- Scew #2 -->
-            <svg class="block scew-two" viewBox="0 0 100 10" preserveAspectRatio="none">
-                <polygon points="60,20 100,0 100,100"/>
-            </svg>
-            <!-- Content After Scew #2 -->
-            <div class="block three">
-              <!-- Contact Information -->
-              <div id="features" class="features-page">
-                  <h2 class="sub-title">Features</h2>
-                  <p>Mauris dignissim viverra justo sit amet pulvinar. Aliquam porttitor at nibh ut blandit. Fusce mollis, arcu nec vehicula commodo, orci orci malesuada ipsum, ut interdum tortor ante vel libero. Donec quis eros in ex aliquet vulputate. Maecenas mollis lacus odio, eu commodo lectus malesuada vitae. Vivamus vestibulum sollicitudin venenatis. Quisque odio erat, maximus vitae felis in, laoreet egestas sapien. Quisque elementum viverra iaculis. Nam ullamcorper sagittis consectetur.
-
-                  Duis fringilla risus sit amet lorem sollicitudin, vitae lobortis libero consectetur. Duis maximus bibendum tellus at vestibulum. Sed hendrerit lacus ac orci viverra, ut viverra arcu scelerisque. In egestas at nisi nec viverra. Quisque nec orci varius, ultrices quam ut, venenatis elit. Nunc leo quam, vestibulum nec nisl a, mollis ornare elit. Curabitur sodales mi nec elementum posuere. Phasellus quis eleifend leo. Cras risus quam, tristique id feugiat at, facilisis quis risus. Morbi bibendum quam in consequat tempor. Sed velit velit, tempor vitae lorem non, consectetur eleifend ex.</p>
-              </div>
-            </div>
-            <!-- Scew #3 -->
-            <svg class="block scew-three" viewBox="0 0 100 10" preserveAspectRatio="none">
-              <polygon color="white" points="60,20 100,0 100,100"/>
-            </svg>
-            <!-- Content After Scew #3 -->
-            <div class="block four">
-              <div class="pricing-page" id="pricing">
-              </div>
-            </div>
-            <!-- Scew #4 -->
-            <svg class="block scew-four" viewBox="0 0 100 10" preserveAspectRatio="none">
-              <polygon points="60,20 100,0 100,100"/>
-            </svg>
-            <!-- Content After Scew #4-->
-            <div class="block five">
-              <div class="contact-page" id="contact">
-              </div>
-            </div>
+          <div class="block two" id="about">
+            <div class="about-page"></div>
+            <div class="features-page"></div>
           </div>
+          <div class="block three" id="features"></div>
+          <div class="block four" id="pricing">
+            <div class="pricing-page"></div>
+            <div class="contact-page"></div>
+          </div>
+          <div class="block five" id="contact"></div>
         </div>
     </body>
 </html>

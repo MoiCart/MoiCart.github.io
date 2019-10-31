@@ -165,12 +165,13 @@
 	overflow-y:scroll;
 	overflow-x:hidden;
 	position: absolute;
+
 }
 
 #inner-horizontal-scroll-wrapper {
 	display: flex;
 	flex-direction: row;
-	width: 580vw;
+	width: 500vw;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin: top left;
 }
@@ -384,95 +385,6 @@
 	 opacity: 1;
 }
 
-svg {
-	display:block;
-}
-
-.scew-one {
-	width: 20vw !important;
-}
-
-.two {
-	background-color: white;
-}
-
-.about-page {
-	color: black;
-	height: 800px;
-	background-color: white;
-}
-
-.about-page .sub-title {
-	text-align: center;
-	font-family:'Coves Bold';
-	font-weight:normal;
-	padding: -10px 70px;
-	padding-top: 50px;
-}
-
-.scew-two {
-	color: black;
-	width: 20vw !important;
-	background-color: white;
-}
-
-.three {
-	background-color: black;
-}
-
-.features-page {
-	color: white;
-	height: 800px;
-}
-
-.feautres-page .sub-title {
-	text-align: center;
-	font-family:'Coves Bold';
-	font-weight:normal;
-	padding: -10px 70px;
-	padding-top: 50px;
-}
-
-.scew-three {
-	fill: white !important;
-	width: 20vw !important;
-	background-color: black;
-}
-
-.four {
-	background-color: white;
-}
-
-.pricing-page {
-	background-color: black;
-}
-
-
-.scew-four {
-	color: black;
-	width: 20vw !important;
-	background-color: white;
-}
-
-.five {
-	background-color: black;
-}
-
-.features-page {
-	height: 100%;
-	background-color: black;
-}
-
-.contact-page .sub-title {
-	text-align: center;
-	text-align: center;
-	font-family:'Coves Bold';
-	font-weight:normal;
-	padding: -10px 70px;
-	padding-top: 50px;
-	transform: rotate(90);
-}
-
 .gooey {
 
 	width: 100%;
@@ -607,6 +519,96 @@ svg {
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
+
+.two {
+
+	background-image: url("rec/photos/1.jpg");
+	background-size: contain;
+	position: relative;
+
+}
+
+.about-page {
+
+	position: absolute;
+	left: 50%;
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	transform: skew(-40deg);
+	opacity: 1;
+	z-index: 1;
+
+}
+
+.three {
+
+	background-image: url("rec/photos/3.jpg");
+	background-size: cover;
+	position:relative;
+
+}
+
+.features-page {
+
+	position: absolute;
+	left: 50%;
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	transform: skew(-40deg);
+	opacity: 1;
+	z-index: 1;
+
+}
+
+.four {
+
+	background-image: url("rec/photos/5.jpg");
+	background-size: cover;
+	position:relative;
+
+}
+
+.pricing-page {
+
+	position: absolute;
+	left: 50%;
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: #A5FF6D;
+	transform: skew(-40deg);
+	opacity: 1;
+	z-index: 1;
+
+}
+
+.five {
+
+	background-image: url("rec/photos/2.jpg");
+	background-size: cover;
+	position: relative;
+
+}
+
+.contact-page {
+
+	position: absolute;
+	left: 50%;
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: #A5FF6D;
+	transform: skew(-40deg);
+	opacity: 1;
+	z-index: 1;
+
+}
+
+
 
 ::-webkit-scrollbar {
 	width: 1px !important;
