@@ -388,7 +388,7 @@
 .gooey {
 
 	width: 100%;
-	height: 150px;
+	height: calc(30% - 80px);
 	position: absolute;
 	bottom: 0px;
 	z-index:2;
@@ -539,6 +539,20 @@
 	transform: skew(-40deg);
 	opacity: 1;
 	z-index: 1;
+
+}
+
+.features-button {
+
+	position: absolute;
+	height: 250px;
+	width: 200px;
+	background-color: #A5FF6D;
+	border-radius: 8%;
+	border-style: solid;
+	border-width: 7px;
+	border-color: white;
+	z-index: 2;
 
 }
 
