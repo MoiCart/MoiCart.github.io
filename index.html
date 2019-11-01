@@ -51,7 +51,7 @@
         </svg>
         </div>
         <!-- Scrollable Website -->
-        <div class="outer-wrapper" id="horizontal-scroll-wrapper" onscroll="console.log('aaa')">
+        <div class="outer-wrapper" id="horizontal-scroll-wrapper" onscroll="if (!scrollCheck) {scrollSnap();}">
           <div class="inner-wrapper" id="inner-horizontal-scroll-wrapper">
             <!-- Main Page Content -->
             <div class="block one">
@@ -70,7 +70,15 @@
             </div>
 
           <div class="block two" id="about">
-            <div class="features-button"></div>
+            <div class="features-button">
+              <h3 class="join">Join</h3>
+              <h3 class="now">Now</h3>
+              <h2 class="button-text">Download now for <span class="bold-button-text">free.</span></h2>
+              <div class="images">
+                <img src="rec/Google Play.png" class="google-play"></img>
+                <img src="rec/App Store.png" class="app-store"></img>
+              </div>
+            </div>
             <div class="about-page">
             </div>
             <div class="features-page"></div>

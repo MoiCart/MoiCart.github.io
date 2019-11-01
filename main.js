@@ -1,10 +1,58 @@
 window.onload = init;
 var scrollCheck;
+var lastScrollVal = 0;
+var triggered = false;
 
 function scrollToElm(elm) {
 
   scrollCheck = true;
   scroller.to(document.getElementById(elm).getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)
+
+}
+
+function scrollSnap() {
+
+  main_pos = 0;
+  about_pos = document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop;
+  features_pos = document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+  pricing_pos = document.getElementById('pricing').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+  contact_pos = document.getElementById('contact').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+
+    if (!scrollCheck) {
+
+      scrollValue = Math.floor(document.getElementById('horizontal-scroll-wrapper').scrollTop);
+
+      if (scrollValue > lastScrollVal) {
+
+        if (main_pos < scrollValue && scrollValue < about_pos) {
+            scrollToElm('about');
+        } else if (about_pos < scrollValue && scrollValue < features_pos) {
+            scrollToElm('features');
+        } else if (features_pos < scrollValue && scrollValue < pricing_pos) {
+            scrollToElm('pricing');
+        } else if (pricing_pos < scrollValue && scrollValue < contact_pos) {
+            scrollToElm('contact');
+        }
+
+        scrollValue = lastScrollVal;
+
+      } else if (scrollValue < lastScrollVal) {
+
+        if (main_pos < scrollValue && scrollValue < about_pos) {
+            scrollToElm('main');
+        } else if (about_pos < scrollValue && scrollValue < features_pos) {
+            scrollToElm('about');
+        } else if (features_pos < scrollValue && scrollValue < pricing_pos) {
+            scrollToElm('features');
+        } else if (contact_pos > scrollValue) {
+            scrollToElm('pricing');
+        }
+
+        scrollValue = lastScrollVal;
+
+      }
+
+    }
 
 }
 
@@ -60,6 +108,7 @@ const scroller = new SweetScroll(
     horizontal: true,
     complete: (isCancel, scroller) => {
      scrollCheck = false;
+     lastScrollVal = Math.floor(document.getElementById('horizontal-scroll-wrapper').scrollTop);
    },
   },
   '#horizontal-scroll-wrapper',
