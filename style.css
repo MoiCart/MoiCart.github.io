@@ -402,7 +402,7 @@
 	--flag: 0;
 	position: absolute;
 	width: calc(100% - 80px);
-	height: 110px;
+	height: 80px;
 	bottom: 20px;
 	left: 30px;
 	z-index:2;
@@ -422,8 +422,7 @@
 	position: absolute;
 	background: #8551FF;
 	left:30px;
-	bottom: 30px;
-	top:calc(60% - 25px);
+	bottom: 40px;
 	width:50px;
 	height:50px;
 	border-radius: 100%;
