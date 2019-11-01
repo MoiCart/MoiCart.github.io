@@ -552,8 +552,8 @@
 	position: absolute;
 	height: 300px;
 	width: 200px;
-	left: 300px;
-	top: 160px;
+	left: 20%;
+	top: 20%;
 	background-color: #A5FF6D;
 	border-radius: 7%;
 	border-style: solid;
