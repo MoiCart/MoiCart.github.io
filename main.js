@@ -2,9 +2,13 @@ window.onload = init;
 
 function scrollToElm(elm) {
 
+
+  document.querySelector('#horizontal-scroll-wrapper').style.scrollSnapType = 'none';
   scroller.to(document.getElementById(elm).getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop)
 
 }
+
+setInterval(function() {console.log(getComputedStyle(document.getElementById('horizontal-scroll-wrapper')).scrollSnapType);}, 1000);
 
 function init() {
 
@@ -57,6 +61,7 @@ const scroller = new SweetScroll(
   {
     horizontal: true,
     complete: (isCancel, scroller) => {
+      document.querySelector('#horizontal-scroll-wrapper').style.scrollSnapType = 'y mandatory';
    },
   },
   '#horizontal-scroll-wrapper',

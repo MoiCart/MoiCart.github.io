@@ -533,6 +533,7 @@
 .about-page {
 
 	position: absolute;
+	top: 0%;
 	left: 50%;
 	color: black;
 	height: 100%;
@@ -551,7 +552,7 @@
 .features-button {
 
 	text-align: center;
-	position: absolute;
+	position: relative;
 	height: 300px;
 	width: 200px;
 	left: 20%;
