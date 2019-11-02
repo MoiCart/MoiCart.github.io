@@ -11,7 +11,7 @@ function scrollToElm(elm) {
 }
 
 function scrollSnap() {
-
+/*
   main_pos = 0;
   about_pos = document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop;
   features_pos = document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
@@ -24,7 +24,7 @@ function scrollSnap() {
 
       if (scrollValue > lastScrollVal) {
 
-        if (main_pos < scrollValue && scrollValue < about_pos) {
+        if (main_pos <= scrollValue && scrollValue < about_pos) {
             scrollToElm('about');
         } else if (about_pos < scrollValue && scrollValue < features_pos) {
             scrollToElm('features');
@@ -33,8 +33,6 @@ function scrollSnap() {
         } else if (pricing_pos < scrollValue && scrollValue < contact_pos) {
             scrollToElm('contact');
         }
-
-        scrollValue = lastScrollVal;
 
       } else if (scrollValue < lastScrollVal) {
 
@@ -52,7 +50,7 @@ function scrollSnap() {
 
       }
 
-    }
+    }*/
 
 }
 

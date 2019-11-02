@@ -160,6 +160,7 @@
 #horizontal-scroll-wrapper {
 	width:100vh;
 	height:100vw;
+	scroll-snap-type: y mandatory;
 	transform: rotate(-90deg) translateX(-100vh);
 	transform-origin: top left;
 	overflow-y:scroll;
@@ -174,11 +175,13 @@
 	width: 500vw;
 	transform: rotate(90deg) translateY(-100vh);
 	transform-origin: top left;
+
 }
 
 #inner-horizontal-scroll-wrapper .block {
 	width: 100vw;
 	height: 100vh;
+	scroll-snap-align: start;
 }
 
  .main-page {
@@ -695,8 +698,6 @@
 	border-width: 10px;
 
 }
-
-
 
 ::-webkit-scrollbar {
 	width: 1px !important;
