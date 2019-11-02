@@ -545,7 +545,6 @@
 	border-right-style: solid;
 	border-color: black;
 	border-width: 10px;
-
 }
 
 .features-button {
@@ -701,4 +700,8 @@
 
 ::-webkit-scrollbar {
 	width: 1px !important;
+}
+
+#unskew-center {
+	transform: skew(40deg);
 }
