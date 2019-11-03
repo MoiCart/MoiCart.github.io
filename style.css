@@ -705,4 +705,31 @@
 
 #unskew {
 	transform: skew(40deg);
+	word-wrap: break-word;
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 5%
+}
+#hunskew {
+	transform: skew(40deg);
+	word-wrap: break-word;
+	width: 40%;
+	position: absolute;
+}
+
+#f {
+	z-index: 5;
+	word-wrap: break-word;
+	width: 40%;
+	position: absolute;
+	top: 30%;
+	color: black;
+}
+#hfeatures {
+	z-index: 5;
+	word-wrap: break-word;
+	width: 40%;
+	position: absolute;
+	color: black;
 }
