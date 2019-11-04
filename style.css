@@ -709,7 +709,8 @@
 	width: 40%;
 	position: absolute;
 	top: 50%;
-	left: 5%
+	left: 5%;
+	z-index: 5;
 }
 #hfirst{
 	transform: skew(40deg);
