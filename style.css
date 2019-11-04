@@ -703,7 +703,7 @@
 	width: 1px !important;
 }
 
-#unskew {
+#first {
 	transform: skew(40deg);
 	word-wrap: break-word;
 	width: 40%;
@@ -711,14 +711,14 @@
 	top: 50%;
 	left: 5%
 }
-#hunskew {
+#hfirst{
 	transform: skew(40deg);
 	word-wrap: break-word;
 	width: 40%;
 	position: absolute;
 }
 
-#f {
+#second {
 	z-index: 5;
 	word-wrap: break-word;
 	width: 40%;
@@ -726,7 +726,7 @@
 	top: 30%;
 	color: black;
 }
-#hfeatures {
+#hsecond {
 	z-index: 5;
 	word-wrap: break-word;
 	width: 40%;
