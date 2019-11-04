@@ -716,6 +716,7 @@
 	transform: skew(40deg);
 	word-wrap: break-word;
 	width: 40%;
+	left: 5%;
 	position: absolute;
 }
 
