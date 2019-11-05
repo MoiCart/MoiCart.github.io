@@ -1057,7 +1057,33 @@ html {
    text-align: center;
 }
 
-.contact-box-input {
+.five .contact-page #hsecond-1 {
+	color:#FFFFFF;
+	font-family:'Coves Light';
+	font-weight: normal;
+	position: relative;
+}
+
+.five .contact-page #hsecond-2 {
+	color:#5EFF00;
+	font-family:'Coves Bold';
+	font-weight: normal;
+	position: relative;
+	font-weight:normal;
+}
+
+.five .contact-page #second {
+	font-family:'Coves Bold' !important;
+	font-weight: normal;
+	color: #F0F0F0;
+}
+
+.five .contact-page #contact-box {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.contact-box .contact-box-input {
 	border-radius: 2%;
 	border-width: 0px;
 }
