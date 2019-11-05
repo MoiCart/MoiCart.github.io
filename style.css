@@ -14,6 +14,12 @@
 
 }
 
+html {
+
+	font-size: 100%;
+
+}
+
  body {
 
 	 width: 100vw;
@@ -137,7 +143,7 @@
 	transform: translateY(-100%);
 	opacity: 0;
 	transition: all 0.3s 1s ease-out;
-	visibility: visible;
+	visibility: hidden;
 
 }
 
@@ -153,7 +159,7 @@
 	position: relative;
 	left: -20px;
 	font-family: 'Coves Bold';
-	font-size: 65px;
+	font-size: 4.06em;
 
 }
 
@@ -220,7 +226,7 @@
  .main-page .title h1 {
 	 color: #FFFFFF;
 	 text-transform: lowercase;
-	 font-size: 205px;
+	 font-size: 12.8em;
 	 line-height: 170px;
 	 border:5px solid;
 	 margin: 30px 0;
@@ -488,7 +494,7 @@
 
 	display: block;
 	font-family: 'Coves Bold';
-	font-size: 20px;
+	font-size: 1.25em;
 	padding-top: 10px;
   padding-left: 30px;
 	padding-right: 30px;
@@ -518,7 +524,6 @@
 /* Main content */
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
@@ -567,7 +572,7 @@
 	width: 65%;
 	height: 100%;
 	transform: skew(40deg);
-	font-size: 3em;
+	font-size: 0.937em;
 
 }
 
@@ -581,7 +586,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: visible;
+	visibility: hidden;
 	opacity: 1;
 	z-index: 1;
 	border-left-style: solid;
@@ -647,7 +652,7 @@
 
 	text-align: center;
 	position: relative;
-	height: 300px;
+	height: 320px;
 	width: 200px;
 	left: 20%;
 	top: 20%;
@@ -673,14 +678,14 @@
 
 	margin-top: -80px;
 	font-family: 'Coves Bold';
-	font-size: 4.06em;
+	font-size: 4.0625em;
 
 }
 
 .features-button .button-text {
 
 	font-family: 'Coves Light';
-	font-size: 1.56em;
+	font-size: 1.5625em;
 	font-weight: 10;
 	margin-top: -65px;
 
@@ -689,7 +694,7 @@
 .features-button .button-text .bold-button-text {
 
 	font-family: 'Coves Bold';
-	font-size: 1.56em;
+	font-size: 1.5625em;
 
 }
 
@@ -720,7 +725,7 @@
 
 	display: flex;
 	position: relative;
-	font-size: 2.5rem;
+	font-size: 1em;
 	color: white;
 
 	align-items: center;
@@ -766,7 +771,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: hidden;
+	visibility: visible;
 	z-index: 1;
 	border-left-style: solid;
 	border-right-style: solid;
@@ -813,7 +818,7 @@
 
 	display: flex;
 	position: relative;
-	font-size: 2.5rem;
+	font-size: 1em;
 	color: white;
 
 	align-items: center;
@@ -908,7 +913,7 @@
 .user-pricing h5.part1, .user-pricing h4.part1 {
 
 	font-family: 'Coves Light';
-	font-size: 1.875em;
+	font-size: 2em;
 	font-weight: 10;
 
 }
@@ -917,7 +922,7 @@
 
 
 		font-family: 'Coves Bold';
-		font-size: 1.875em;
+		font-size: 1em;
 
 }
 
@@ -945,7 +950,7 @@
 
 		display: flex;
 		position: relative;
-		font-size: 2.5rem;
+		font-size: 1em;
 		color: white;
 
 		align-items: center;
@@ -957,7 +962,7 @@
 
 		font-style: 'Coves Light';
 		font-weight: 10;
-		font-size: 2.5em;
+		font-size: 1em;
 		border-radius: 10px;
 		background-color: #8551FF;
 		box-shadow: inset 0 0 0 6px white;
@@ -984,9 +989,9 @@
 	float: left;
 	align-items: center;
 	justify-content: center;
-	
+
 	background-color: rgb(250, 250, 250, 0);
-	
+
 	position:relative;
 	top: 0;
 }
@@ -994,27 +999,27 @@
 .phone-map-block img.phone-map {
 	padding-top: 20%;
 	padding-left: 20%;
-	
+
 	width: 30%;
 	height: 30%;
-	
+
 	position: relative;
 	z-index: 0;
 
 }
 
-.phone-map-block img.phone-def {	
+.phone-map-block img.phone-def {
 	padding-top: 18%;
 	padding-left: 18%;
-	
+
 	width: 33%;
 	height: 81%;
-	
+
 	z-index: 1;
 	position: absolute;
-	
+
 	left:0;
-	top:0; 
+	top:0;
 }
 
 .five {
@@ -1025,18 +1030,18 @@
 
 }
 
-.five .contact-page {
+.contact-page {
 
 	position: absolute;
+	top:0%;
+	font-size: 1em;
 	left: 50%;
 	color: black;
 	height: 100%;
-	width: 50%;
-	
+	width: 100%;
 	background-color: #98D54D;
 	opacity: 1;
 	z-index: 1;
-	
 	border-left-style: solid;
 	border-right-style: solid;
 	border-color: black;
@@ -1052,41 +1057,11 @@
    text-align: center;
 }
 
-.five .contact-page {
-	padding-left: 10px;
-	border-right: 0px;
-}
-
-.five .contact-page h1.hsecond-1 {
-	color:#FFFFFF;
-	font-family:'Coves Light';
-	font-weight: normal;
-	position: relative;
-	padding: 70px 0;
-}
-
-.five .contact-page span.hsecond-2 {
-	color:#5EFF00;
-	font-family:'Coves Bold';
-	position: relative;
-	font-weight:normal;
-}
-
-.five .contact-page p.second {
-	font-family:'Coves Bold' !important;
-	color: #FFFFFF;
-}
-
-.five .contact-page .contact-box {
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-.contact-box .contact-box-input {
+.contact-box-input {
 	border-radius: 2%;
 	border-width: 0px;
 }
 
-.contact-box .contact-box-button {
+.contact-box-button {
 	border-radius: 5%;
 }
