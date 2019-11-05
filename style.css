@@ -1057,27 +1057,28 @@
 	border-right: 0px;
 }
 
-.five .contact-page h1.hsecond-1 {
+.five .contact-page #hsecond-1 {
 	color:#FFFFFF;
 	font-family:'Coves Light';
 	font-weight: normal;
 	position: relative;
-	padding: 70px 0;
 }
 
-.five .contact-page span.hsecond-2 {
+.five .contact-page #hsecond-2 {
 	color:#5EFF00;
 	font-family:'Coves Bold';
+	font-weight: normal;
 	position: relative;
 	font-weight:normal;
 }
 
-.five .contact-page p.second {
+.five .contact-page #second {
 	font-family:'Coves Bold' !important;
-	color: #FFFFFF;
+	font-weight: normal;
+	color: #F0F0F0;
 }
 
-.five .contact-page .contact-box {
+.five .contact-page #contact-box {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
