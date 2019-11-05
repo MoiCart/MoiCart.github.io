@@ -581,7 +581,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: visible;
+	visibility: hidden;
 	opacity: 1;
 	z-index: 1;
 	border-left-style: solid;
@@ -766,7 +766,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: hidden;
+	visibility: visible;
 	z-index: 1;
 	border-left-style: solid;
 	border-right-style: solid;
@@ -805,6 +805,39 @@
 	font-size: 30px;
 	line-height: 60px;
 	color: black;
+
+}
+
+
+.goto-pricing {
+
+	display: flex;
+	position: relative;
+	font-size: 2.5rem;
+	color: white;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 250px;
+	height: 75px;
+
+	border-radius: 5px;
+	background-color: #8551FF;
+	box-shadow: inset 0 0 0 5px #98D54D;
+	transform: skew(40deg);
+	top: -33%;
+	left: 66%;
+	z-index: 5;
+	cursor: pointer;
+
+}
+
+.goto-pricing h4 {
+
+	font-family: 'Coves Bold';
+	font-weight: 30;
+	font-size: 50px;
 
 }
 
