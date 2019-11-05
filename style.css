@@ -581,7 +581,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: hidden;
+	visibility: visible;
 	opacity: 1;
 	z-index: 1;
 	border-left-style: solid;
@@ -592,24 +592,27 @@
 
 .about-page h2 {
 
+	top: -10%;
+	left: 0%;
+
+}
+
+.about-page h2.part1 {
+
 	position: relative;
-	top: -8%;
-	left: 10%;
 	font-family: 'Coves Light';
 	font-weight: 10;
-	font-size: 100px;
+	font-size: 95px;
 	color: #98D54D;
 
 }
 
-.about-page h1 {
+.about-page span.part2 {
 
 	position: relative;
-	top: -20%;
-	left: 38%;
 	font-family: 'Coves Bold';
 	font-weight: 20;
-	font-size: 130px;
+	font-size: 95px;
 	color: #98D54D;
 
 }
@@ -617,8 +620,8 @@
 .about-page h3 {
 
 	position: relative;
-	top: -35%;
-	left: 18%;
+	top: -16%;
+	left: 10%;
 	font-family: 'Coves Light';
 	font-weight: 10;
 	font-size: 50px;
@@ -629,10 +632,10 @@
 .about-page p {
 
 	position: relative;
-	top: -32%;
-	left: 15%;
+	top: -15%;
+	left: 5%;
 	font-family: 'Coves Light';
-	padding-right: 30px;
+	padding-right: 10px;
 	font-weight: 15;
 	font-size: 30px;
 	line-height: 60px;
@@ -730,8 +733,8 @@
 	background-color: #8551FF;
 	box-shadow: inset 0 0 0 5px #98D54D;
 	transform: skew(40deg);
-	top: -35%;
-	left: 41%;
+	top: -33%;
+	left: 35%;
 	z-index: 5;
 	cursor: pointer;
 
@@ -763,7 +766,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: visible;
+	visibility: hidden;
 	z-index: 1;
 	border-left-style: solid;
 	border-right-style: solid;
