@@ -1,5 +1,70 @@
 window.onload = init;
 
+
+function scrollTrack() {
+
+  main = 0;
+  about = document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+  features = document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+  pricing = document.getElementById('pricing').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+  contact = document.getElementById('contact').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+
+  offset = document.getElementById('horizontal-scroll-wrapper').scrollTop;
+
+  if (offset == main) {
+
+    document.getElementById('main').classList.add('in-view');
+    document.getElementById('about').classList.add('in-view2');
+    document.getElementById('about-page').classList.add('in-view');
+    document.getElementById('features-page').classList.remove('in-view');
+    document.getElementById('features').classList.remove('in-view');
+    document.getElementById('pricing').classList.remove('in-view');
+    document.getElementById('contact').classList.remove('in-view');
+
+  } else if (offset == about) {
+
+    document.getElementById('main').classList.remove('in-view');
+    document.getElementById('about-page').classList.add('in-view');
+    document.getElementById('about').classList.add('in-view2');
+    document.getElementById('features-page').classList.remove('in-view');
+    document.getElementById('features').classList.remove('in-view');
+    document.getElementById('pricing').classList.remove('in-view');
+    document.getElementById('contact').classList.remove('in-view');
+
+  } else if (offset == features) {
+
+    document.getElementById('main').classList.remove('in-view');
+    document.getElementById('about-page').classList.remove('in-view');
+    document.getElementById('about').classList.remove('in-view2');
+    document.getElementById('features-page').classList.add('in-view');
+    document.getElementById('features').classList.add('in-view');
+    document.getElementById('pricing').classList.remove('in-view');
+    document.getElementById('contact').classList.remove('in-view');
+
+  } else if (offset == pricing) {
+
+    document.getElementById('main').classList.remove('in-view');
+    document.getElementById('about-page').classList.remove('in-view');
+    document.getElementById('about').classList.remove('in-view2');
+    document.getElementById('features-page').classList.remove('in-view');
+    document.getElementById('features').classList.remove('in-view');
+    document.getElementById('pricing').classList.add('in-view');
+    document.getElementById('contact').classList.remove('in-view');
+
+  } else if (offset == contact) {
+
+    document.getElementById('main').classList.remove('in-view');
+    document.getElementById('about-page').classList.remove('in-view');
+    document.getElementById('about').classList.remove('in-view2');
+    document.getElementById('features-page').classList.remove('in-view');
+    document.getElementById('features').classList.remove('in-view');
+    document.getElementById('pricing').classList.remove('in-view');
+    document.getElementById('contact').classList.add('in-view');
+
+  }
+
+}
+
 function scrollToElm(elm) {
 
 

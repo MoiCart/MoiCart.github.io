@@ -53,11 +53,11 @@
         </svg>
         </div>
         <!-- Scrollable Website -->
-        <div class="outer-wrapper" id="horizontal-scroll-wrapper">
+        <div class="outer-wrapper" id="horizontal-scroll-wrapper" onscroll="scrollTrack()">
           <div class="inner-wrapper" id="inner-horizontal-scroll-wrapper">
             <!-- Main Page Content -->
-            <div class="block one">
-              <div class="main-page" id="main">
+            <div class="block one" id="main">
+              <div class="main-page">
                 <div class="title" id="test">
                   <h1 class="part1">Moi<span class="part2">Cart</span></h1>
                   <p class="motto">
@@ -70,7 +70,7 @@
                   <h4 class="part1">Get <span class="part2">Started</span></h4>
               </div>
             </div>
-          <div class="block two" id="about">
+          <div class="block two in-view2" id="about">
             <div class="features-button">
               <h3 class="join">Join</h3>
               <h3 class="now">Now</h3>
@@ -80,35 +80,39 @@
                 <img src="rec/App Store.png" class="app-store"></img>
               </div>
             </div>
-            <div class="about-page">
-              <div class="body-text-left">
-                <div class="text-wrap-left"></div>
-                 <h2 class="part1">About<span class="part2"> Us</span></h2>
-                 <p>
-                   moicart is a service dedicated to helping you find nearby stores that have
-                   your groceries at the cheapest prices. By using our app and connecting you with thousands of stores
-                   you can be confident that you are getting the best deals.
-                 </p>
-                <h3>Make your chores a little bit <br> easier with moicart.</h3>
+            <div class="about-container in-view" id="about-page">
+              <div class="about-page">
+                <div class="body-text-left">
+                  <div class="text-wrap-left"></div>
+                   <h2 class="part1">About<span class="part2"> Us</span></h2>
+                   <p>
+                     moicart is a service dedicated to helping you find nearby stores that have
+                     your groceries at the cheapest prices. By using our app and connecting you with thousands of stores
+                     you can be confident that you are getting the best deals.
+                   </p>
+                  <h3>Make your chores a little bit <br> easier with moicart.</h3>
+                </div>
+                <div onClick="scrollToElm('features')" class="goto-features">
+                    <h4>Features</h4>
+                </div>
               </div>
-              <div onClick="scrollToElm('features')" class="goto-features">
-                  <h4>Features</h4>
-              </div>
-            </div>
-            <div class="features-page">
-              <div class="body-text-right">
-                <div class="text-wrap-right"></div>
-                 <h1 class="part1">Product<span class="part2"> Features</span></h1>
-                 <p>
-                   How the app works is simple - input your grocery list and search radius then press Go. That's it! The app
-                   will use keywords from your list and search for the cheapest price. It then ranks the stores based on the amount
-                   of items that are the cheapest at that store.
-                   We also offer delivery services - allowing you to save as much
-                   time as possible during your busy day.
-                 </p>
-              </div>
-              <div onClick="scrollToElm('pricing')" class="goto-pricing">
-                  <h4>Pricing</h4>
+          </div>
+            <div class="features-container" id="features-page">
+              <div class="features-page">
+                <div class="body-text-right">
+                  <div class="text-wrap-right"></div>
+                   <h1 class="part1">Product<span class="part2"> Features</span></h1>
+                   <p>
+                     How the app works is simple - input your grocery list and search radius then press Go. That's it! The app
+                     will use keywords from your list and search for the cheapest price. It then ranks the stores based on the amount
+                     of items that are the cheapest at that store.
+                     We also offer delivery services - allowing you to save as much
+                     time as possible during your busy day.
+                   </p>
+                </div>
+                <div onClick="scrollToElm('pricing')" class="goto-pricing">
+                    <h4>Pricing</h4>
+                </div>
               </div>
             </div>
           </div>
