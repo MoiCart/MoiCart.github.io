@@ -1031,17 +1031,20 @@ html {
 }
 
 .contact-page {
-
-	position: absolute;
 	top:0%;
-	font-size: 1em;
 	left: 50%;
-	color: black;
-	height: 100%;
-	width: 100%;
-	background-color: #98D54D;
-	opacity: 1;
 	z-index: 1;
+	height: 100%;
+	width: 40%;
+	position: absolute;
+	
+	opacity: 1;
+	color: black;
+	font-size: 1em;
+	background-color: #98D54D;
+	
+	padding-left: 2%;
+	padding-right: 2%;
 	border-left-style: solid;
 	border-right-style: solid;
 	border-color: black;
@@ -1060,6 +1063,7 @@ html {
 .five .contact-page #hsecond-1 {
 	color:#FFFFFF;
 	font-family:'Coves Light';
+	font-size: 2em;
 	font-weight: normal;
 	position: relative;
 }
@@ -1067,6 +1071,7 @@ html {
 .five .contact-page #hsecond-2 {
 	color:#5EFF00;
 	font-family:'Coves Bold';
+	font-size: 1em;
 	font-weight: normal;
 	position: relative;
 	font-weight:normal;
@@ -1074,6 +1079,7 @@ html {
 
 .five .contact-page #second {
 	font-family:'Coves Bold' !important;
+	font-size: 1em;
 	font-weight: normal;
 	color: #F0F0F0;
 }
@@ -1090,4 +1096,9 @@ html {
 
 .contact-box-button {
 	border-radius: 5%;
+	border-width: 1%;
+	background-color: #8551FF;
+	border-color: #FFFFFF;
+	height: 10%;
+	width: 20%
 }
