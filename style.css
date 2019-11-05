@@ -1000,14 +1000,21 @@
 	
 	position: relative;
 	z-index: 0;
+
 }
 
 .phone-map-block img.phone-def {	
-	width: 40%;
-	height: 40%;
+	padding-top: 18%;
+	padding-left: 18%;
+	
+	width: 33%;
+	height: 81%;
 	
 	z-index: 1;
 	position: absolute;
+	
+	left:0;
+	top:0; 
 }
 
 .five {
@@ -1047,6 +1054,7 @@
 
 .five .contact-page {
 	padding-left: 10px;
+	border-right: 0px;
 }
 
 .five .contact-page h1.hsecond-1 {
