@@ -1317,6 +1317,20 @@ textarea {
    text-align: center;
 }
 
+
+.in-view .form {
+
+	opacity: 1;
+	transition: 0.5s;
+
+}
+
+.form {
+
+	opacity: 0;
+
+}
+
 .five .contact-page #hsecond-1 {
 	color:#FFFFFF;
 	font-family:'Coves Light';
@@ -1326,7 +1340,7 @@ textarea {
 }
 
 .five .contact-page #hsecond-2 {
-	color:#5EFF00;
+	color:#FFFFFF;
 	font-family:'Coves Bold';
 	font-size: 1em;
 	font-weight: normal;
@@ -1336,9 +1350,9 @@ textarea {
 
 .five .contact-page #second {
 	font-family:'Coves Bold' !important;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: normal;
-	color: #F0F0F0;
+	color: black;
 }
 
 .five .contact-page #contact-box {
