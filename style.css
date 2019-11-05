@@ -265,8 +265,6 @@
 	height: 75px;
 
 	position: relative;
-	top: -30%;
-	left: calc(50% - 125px);
 
 	cursor: pointer;
 
@@ -274,6 +272,8 @@
 
 .get-started {
 	--borderWidth: 5px;
+	left: calc(50% - 125px);
+	top: -30%;
 	position: relative;
 	border-radius: var(--borderWidth);
 	background-color: #8551FF;
@@ -391,7 +391,7 @@
 .gooey {
 
 	width: 100%;
-	height: calc(30% - 80px);
+	height: calc(30% - 110px);
 	position: absolute;
 	bottom: 0px;
 	z-index:2;
@@ -530,6 +530,47 @@
 
 }
 
+.text-wrap-left {
+	position:relative;
+  width: inherit;
+  height: inherit;
+  shape-outside: polygon(0 0, 100% 0%, 0% 100%, 0% 100%);
+  float: left;
+
+}
+
+.text-wrap-right {
+	position:relative;
+  width: inherit;
+  height: inherit;
+  shape-outside:polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+  float: right;
+
+}
+
+.body-text-left {
+
+	top: 3%;
+	position: relative;
+	left:-17%;
+	width: 65%;
+	height: 100%;
+	transform: skew(40deg);
+
+}
+
+.body-text-right {
+
+	top: 3%;
+	position: relative;
+	left:52%;
+	width: 65%;
+	height: 100%;
+	transform: skew(40deg);
+	font-size: 15px;
+
+}
+
 .about-page {
 
 	position: absolute;
@@ -540,12 +581,63 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
+	visibility: hidden;
 	opacity: 1;
 	z-index: 1;
 	border-left-style: solid;
 	border-right-style: solid;
 	border-color: black;
 	border-width: 10px;
+}
+
+.about-page h2 {
+
+	position: relative;
+	top: -8%;
+	left: 10%;
+	font-family: 'Coves Light';
+	font-weight: 10;
+	font-size: 100px;
+	color: #98D54D;
+
+}
+
+.about-page h1 {
+
+	position: relative;
+	top: -20%;
+	left: 38%;
+	font-family: 'Coves Bold';
+	font-weight: 20;
+	font-size: 130px;
+	color: #98D54D;
+
+}
+
+.about-page h3 {
+
+	position: relative;
+	top: -35%;
+	left: 18%;
+	font-family: 'Coves Light';
+	font-weight: 10;
+	font-size: 50px;
+	color: #98D54D;
+
+}
+
+.about-page p {
+
+	position: relative;
+	top: -32%;
+	left: 15%;
+	font-family: 'Coves Light';
+	padding-right: 30px;
+	font-weight: 15;
+	font-size: 30px;
+	line-height: 60px;
+	color: black;
+
 }
 
 .features-button {
@@ -556,7 +648,7 @@
 	width: 200px;
 	left: 20%;
 	top: 20%;
-	background-color: #A5FF6D;
+	background-color: #98D54D;
 	border-radius: 7%;
 	border-style: solid;
 	border-width: 7px;
@@ -621,6 +713,38 @@
 
 }
 
+.goto-features {
+
+	display: flex;
+	position: relative;
+	font-size: 2.5rem;
+	color: white;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 250px;
+	height: 75px;
+
+	border-radius: 5px;
+	background-color: #8551FF;
+	box-shadow: inset 0 0 0 5px #98D54D;
+	transform: skew(40deg);
+	top: -35%;
+	left: 41%;
+	z-index: 5;
+	cursor: pointer;
+
+}
+
+.goto-features h4 {
+
+	font-family: 'Coves Bold';
+	font-weight: 30;
+	font-size: 50px;
+
+}
+
 .three {
 
 	background-image: url("rec/photos/3.jpg");
@@ -632,18 +756,77 @@
 .features-page {
 
 	position: absolute;
+	top: 0%;
 	left: 50%;
 	color: black;
 	height: 100%;
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	opacity: 0;
+	visibility: visible;
 	z-index: 1;
 	border-left-style: solid;
 	border-right-style: solid;
 	border-color: black;
 	border-width: 10px;
+
+}
+
+.features-page h1.part1 {
+
+	position: relative;
+	color: #98D54D;
+	font-family: 'Coves Light';
+	font-weight: normal;
+	font-size: 100px;
+	left:10%;
+	top:-7%;
+
+}
+
+.features-page span.part2 {
+
+	color: #98D54D;
+	font-family: 'Coves Bold';
+	font-weight: normal;
+
+}
+
+.features-page p {
+
+	position: relative;
+	top: -15%;
+	left: 10%;
+	font-family: 'Coves Light';
+	font-weight: 15;
+	font-size: 30px;
+	line-height: 60px;
+	color: black;
+
+}
+
+.mockup {
+
+	position: relative;
+	top: 16%;
+	left: 73%;
+	z-index: 3;
+	visibility: visible;
+	height: 70%;
+	width: auto;
+
+}
+
+.three textarea {
+
+	position:relative;
+	top: 5.5%;
+	left: 58%;
+	border-radius: 10px;
+	height: 46%;
+	width: 12%;
+	z-index: 4;
+	resize:none;
 
 }
 
@@ -655,21 +838,109 @@
 
 }
 
-.pricing-page {
+#price-box {
 
-	position: absolute;
-	left: 50%;
-	color: black;
-	height: 100%;
-	width: 100%;
-	background-color: #A5FF6D;
-	transform: skew(-40deg);
-	opacity: 1;
-	z-index: 1;
-	border-left-style: solid;
-	border-right-style: solid;
-	border-color: black;
-	border-width: 10px;
+	position: relative;
+	height: 600px;
+	width: 300px;
+	margin: 50px;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: white;
+	border-width: 7px;
+	background-color: #98D54D;
+	color: white;
+	top: -10px;
+	left: 150px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+
+.user-pricing .free, .user-pricing .pro {
+
+	float:left;
+
+}
+
+.user-pricing .no-ads {
+
+	float:left;
+
+}
+
+.user-pricing h5.part1, .user-pricing h4.part1 {
+
+	font-family: 'Coves Light';
+	font-size: 30px;
+	font-weight: 10;
+
+}
+
+.user-pricing span.part2 {
+
+
+		font-family: 'Coves Bold';
+		font-size: 30px;
+
+}
+
+.user-pricing h2 {
+
+	position: relative;
+	font-family: 'Coves Bold';
+	font-size: 50px;
+	text-align: center;
+	color:#8551FF;
+
+}
+
+.user-pricing h5 {
+
+	position: relative;
+	font-style: 'Coves Light';
+	font-weight: 10;
+	font-size:30px;
+	text-align: center;
+
+}
+
+.user-pricing .sign-up {
+
+		display: flex;
+		position: relative;
+		font-size: 2.5rem;
+		color: white;
+
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		width: 200px;
+		height: 100px;
+
+		font-style: 'Coves Light';
+		font-weight: 10;
+		font-size: 40px;
+		border-radius: 10px;
+		background-color: #8551FF;
+		box-shadow: inset 0 0 0 6px white;
+		top: -3%;
+		left: 17%;
+		z-index: 5;
+		cursor: pointer;
+
+}
+
+.user-pricing .pro .sign-up {
+
+	top:8%;
+
+}
+
+.user-pricing .no-ads .sign-up {
+
+	top: 3%;
 
 }
 
@@ -688,7 +959,7 @@
 	color: black;
 	height: 100%;
 	width: 100%;
-	background-color: #A5FF6D;
+	background-color: #98D54D;
 	transform: skew(-40deg);
 	opacity: 1;
 	z-index: 1;
@@ -703,80 +974,6 @@
 	width: 1px !important;
 }
 
-#first {
-	transform: skew(40deg);
-	word-wrap: break-word;
-	width: 40%;
-	position: absolute;
-	top: 50%;
-	left: 5%;
-	z-index: 5;
-}
-#hfirst{
-	transform: skew(40deg);
-	word-wrap: break-word;
-	width: 40%;
-	left: 5%;
-	position: absolute;
-}
-
-#second {
-	z-index: 5;
-	word-wrap: break-word;
-	width: 40%;
-	position: absolute;
-	top: 10%;
-	color: black;
-}
-#hsecond {
-	z-index: 5;
-	word-wrap: break-word;
-	width: 40%;
-	position: absolute;
-	color: black;
-}
-
-.free-button {
-	text-align: left;
-	position: relative;
-	height: 50%;
-	width: 20%;
-	left: 0%;
-	top: 40%;
-	background-color: #A5FF6D;
-	border-radius: 7%;
-	border-style: solid;
-	border-width: 7px;
-	border-color: white;
-	z-index: 2;
-}
-
-.noAds-button {
-	text-align: left;
-	position: relative;
-	height: 50%;
-	width: 20%;
-	left: 21%;
-	top: -12%;
-	background-color: #A5FF6D;
-	border-radius: 7%;
-	border-style: solid;
-	border-width: 7px;
-	border-color: white;
-	z-index: 2;
-}
-
-.pro-button {
-	text-align: left;
-	position: relative;
-	height: 50%;
-	width: 20%;
-	left: 42%;
-	top: -64%;
-	background-color: #A5FF6D;
-	border-radius: 7%;
-	border-style: solid;
-	border-width: 7px;
-	border-color: white;
-	z-index: 2;
+::-webkit-input-placeholder {
+   text-align: center;
 }

@@ -8,8 +8,6 @@ function scrollToElm(elm) {
 
 }
 
-setInterval(function() {console.log(getComputedStyle(document.getElementById('horizontal-scroll-wrapper')).scrollSnapType);}, 1000);
-
 function init() {
 
     if (window.Event) {
