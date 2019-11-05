@@ -137,7 +137,7 @@
 	transform: translateY(-100%);
 	opacity: 0;
 	transition: all 0.3s 1s ease-out;
-	visibility: hidden;
+	visibility: visible;
 
 }
 
@@ -581,7 +581,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: hidden;
+	visibility: visible;
 	opacity: 1;
 	z-index: 1;
 	border-left-style: solid;
@@ -766,7 +766,7 @@
 	width: 100%;
 	background-color: white;
 	transform: skew(-40deg);
-	visibility: visible;
+	visibility: hidden;
 	z-index: 1;
 	border-left-style: solid;
 	border-right-style: solid;
@@ -1063,7 +1063,6 @@
 	font-weight: normal;
 	position: relative;
 	padding: 70px 0;
-	float:left;
 }
 
 .five .contact-page span.hsecond-2 {
@@ -1071,12 +1070,11 @@
 	font-family:'Coves Bold';
 	position: relative;
 	font-weight:normal;
-	padding: -10px 70px;
-	float:left;
 }
 
 .five .contact-page p.second {
-	font-family:'Coves Bold';
+	font-family:'Coves Bold' !important;
+	color: #FFFFFF;
 }
 
 .five .contact-page .contact-box {
