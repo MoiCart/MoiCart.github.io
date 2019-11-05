@@ -977,3 +977,12 @@
 ::-webkit-input-placeholder {
    text-align: center;
 }
+
+.contact-box-input {
+	border-radius: 2%;
+	border-width: 0px;
+}
+
+.contact-box-button {
+	border-radius: 5%;
+}
