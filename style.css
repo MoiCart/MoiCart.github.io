@@ -648,7 +648,7 @@ html {
 	position: relative;
 	font-family: 'Coves Bold';
 	font-weight: 20;
-	font-size: 13.07vh;
+	font-size: 11vh;
 	color: #98D54D;
 	opacity: 1;
 	transition: 0.5s;
@@ -660,7 +660,7 @@ html {
 	position: relative;
 	font-family: 'Coves Bold';
 	font-weight: 20;
-	font-size: 2.22vh;
+	font-size: 11vh;
 	color: #98D54D;
 	opacity: 0;
 
@@ -701,7 +701,7 @@ html {
 	font-family: 'Coves Light';
 	padding-right: 10px;
 	font-weight: 15;
-	font-size: 2.77vh;
+	font-size: 4vh;
 	line-height: 60px;
 	color: black;
 	opacity: 0;
@@ -716,7 +716,7 @@ html {
 	font-family: 'Coves Light';
 	padding-right: 10px;
 	font-weight: 15;
-	font-size: 2.77vh;
+	font-size: 4vh;
 	line-height: 60px;
 	color: black;
 	opacity: 1;
@@ -950,7 +950,7 @@ html {
 	left: 10%;
 	font-family: 'Coves Light';
 	font-weight: 15;
-	font-size: 4.16vh;
+	font-size: 3.70vh;
 	line-height: 60px;
 	color: black;
 	transition: 0.5s;
@@ -965,7 +965,7 @@ html {
 	left: 10%;
 	font-family: 'Coves Light';
 	font-weight: 15;
-	font-size: 4.16vh;
+	font-size: 3.70vh;
 	line-height: 60px;
 	color: black;
 
