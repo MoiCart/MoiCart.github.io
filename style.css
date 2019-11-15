@@ -682,7 +682,7 @@ html {
 .in-view .about-page h3 {
 
 	position: relative;
-	top: -16%;
+	top: -20%;
 	left: 10%;
 	font-family: 'Coves Light';
 	font-weight: 10;
@@ -835,7 +835,7 @@ html {
 	background-color: #8551FF;
 	box-shadow: inset 0 0 0 5px #98D54D;
 	transform: skew(40deg);
-	top: -33%;
+	top: -35%;
 	left: 35%;
 	z-index: 5;
 	cursor: pointer;
@@ -1013,7 +1013,7 @@ html {
 	background-color: #8551FF;
 	box-shadow: inset 0 0 0 5px #98D54D;
 	transform: skew(40deg);
-	top: -33%;
+	top: -35%;
 	left: 66%;
 	z-index: 5;
 	cursor: pointer;
