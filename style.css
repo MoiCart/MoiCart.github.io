@@ -702,7 +702,7 @@ html {
 	padding-right: 10px;
 	font-weight: 15;
 	font-size: 4vh;
-	line-height: 60px;
+	line-height: 7.87vh;
 	color: black;
 	opacity: 0;
 
@@ -951,7 +951,7 @@ html {
 	font-family: 'Coves Light';
 	font-weight: 15;
 	font-size: 3.70vh;
-	line-height: 60px;
+	line-height: 7.87vh;
 	color: black;
 	transition: 0.5s;
 
@@ -966,7 +966,7 @@ html {
 	font-family: 'Coves Light';
 	font-weight: 15;
 	font-size: 3.70vh;
-	line-height: 60px;
+	line-height: 7.87vh;
 	color: black;
 
 }
