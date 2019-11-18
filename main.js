@@ -4,13 +4,15 @@ window.onload = init;
 function scrollTrack() {
 
   main = 0;
-  about = document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
-  features = document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
-  pricing = document.getElementById('pricing').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
-  contact = document.getElementById('contact').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop
+  about = Math.round(document.getElementById('about').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop);
+  features = Math.round(document.getElementById('features').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop);
+  pricing = Math.round(document.getElementById('pricing').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop);
+  contact = Math.round(document.getElementById('contact').getBoundingClientRect().left + document.getElementById('horizontal-scroll-wrapper').scrollTop);
 
-  offset = document.getElementById('horizontal-scroll-wrapper').scrollTop;
+  offset = Math.round(document.getElementById('horizontal-scroll-wrapper').scrollTop);
 
+  console.log(offset)
+  console.log(about)
   if (offset == main) {
 
     document.getElementById('main').classList.add('in-view');
@@ -21,7 +23,7 @@ function scrollTrack() {
     document.getElementById('pricing').classList.remove('in-view');
     document.getElementById('contact').classList.remove('in-view');
 
-  } else if (offset == about) {
+  } else if ((offset == about) || (offset+1 == about)) {
 
     document.getElementById('main').classList.remove('in-view');
     document.getElementById('about-page').classList.add('in-view');
